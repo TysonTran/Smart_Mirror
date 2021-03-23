@@ -36,15 +36,4 @@ lookup_weather = { #Link to image file
 "Clear" : "Some link",
 "Clouds" : "Some link"
 }
-print(lookup_weather["Clouds"])
 
-class Weather_Widget(Frame):
-	def __init__(self, parent): #Parent is where frame widget is created
-		super().__init__(self, parent, bg = 'black') #Uses init from Frame
-		self.temp = ''
-		self.forecast = ''
-
-
-	
-	def kelvin_to_farenheit(k):
-		return round((k*(9/5)) - 459.67, 2)
